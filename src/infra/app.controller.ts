@@ -2,7 +2,7 @@ import { Controller, Get } from '@nestjs/common';
 import { Body, Post } from '@nestjs/common/decorators';
 import { randomUUID } from 'crypto';
 import { CreateNotificationBody } from './create-notification-class';
-import { MailService } from './mail/mail-service';
+import { MailService } from '../mail/mail-service';
 import { PrismaService } from './prisma.service';
 
 @Controller('notifications')
